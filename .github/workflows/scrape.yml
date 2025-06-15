@@ -24,4 +24,6 @@ jobs:
       - name: Run scraper
         env:
           GOOGLE_SERVICE_ACCOUNT_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_BASE64 }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          RANGE: ${{ secrets.RANGE }}
         run: node src/scrapeMoneyControl.js

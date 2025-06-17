@@ -1,9 +1,9 @@
 name: Scrape MoneyControl Daily
 
-on:
-  schedule:
-    - cron: "0 10 * * *"  # Runs every day at 10:00 AM UTC
-  workflow_dispatch:     # Optional: lets you trigger manually
+# on:
+#   schedule:
+#     - cron: "0 10 * * *"  # Runs every day at 10:00 AM UTC
+  # workflow_dispatch:     # Optional: lets you trigger manually
 
 jobs:
   run-scraper:
